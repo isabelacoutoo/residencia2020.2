@@ -12,7 +12,7 @@ export default createGlobalStyle`
      width: 100%;
      overflow: hidden;
 
-     background: #5D79B1;
+     background: #E9EBEC;
      @media (max-width: 500px) {
      overflow: visible;
      height: 100%;

@@ -1,36 +1,32 @@
 import { makeStyles } from '@material-ui/core/styles';
-//import styled from 'styled-components';
+import car from '../../assets/cartaovermelho.png'
 
-
-// export const Container = styled.div`
-//   height: 100vh;
-//   width: 100vw;
-//   background-color: #12344a;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// `;
-// export const LoginBox = styled.div`
-//   height: 56vh;
-//   width: 40vw;
-//   border-radius: 8px;
-//   border: 1px solid white;
-//   filter: drop-shadow(4px 3px 9px rgba(250, 250, 200, 0.35));
-// `;
 export const useStyles = makeStyles((theme) => ({
+  root: {
+    height: '100vh',
+  },
+  image: {
+    backgroundImage: `url(${car})` ,
+    backgroundRepeat: 'no-repeat',
+    backgroundColor:
+      theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
+    backgroundSize: 'contain',
+    width: '70%',
+    backgroundPosition: 'center',
+  },
   paper: {
-    marginTop: theme.spacing(8),
+    margin: theme.spacing(8, 4),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
   },
   avatar: {
     margin: theme.spacing(1),
-    backgroundColor: theme.palette.error.main,
+    backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(1),
+    width: '70%', // Fix IE 11 issue.
+    marginTop: '10vh',
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
